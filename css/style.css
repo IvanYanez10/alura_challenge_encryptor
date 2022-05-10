@@ -10,12 +10,13 @@ body{
   max-width: 1800px;
   margin: auto; 
   margin-top: 30px;
+  display: flex;
 }
 
 /**/
 .logo{
   height: 40px;  
-  margin: auto;
+  
 }
 
 .logo img{
@@ -72,6 +73,10 @@ body{
   display: inline-block;
   font-size: 15px;
 }
+.encryptBtn:hover{
+  background-color: #325683ae;
+  cursor: pointer;
+}
 
 .decryptBtn{
   background-color: #E5E5E5;
@@ -83,10 +88,16 @@ body{
   display: inline-block;
   font-size: 15px;
 }
+.decryptBtn:hover{
+  background-color: #2c609f;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 /**/
 .form-reslts{  
-  position: relative;
+  flex: 2;
   top: -120px;
   height: 750px;
   width: 380px;
@@ -94,7 +105,6 @@ body{
   border-radius: 32px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
   padding: 30px;
-  display: inline-block;  
 }
 
 .no-data-result{
@@ -122,12 +132,45 @@ body{
   font-weight: 200;
 }
 
-.hidden{
-    display: none;
+/**/
+#resultsScreen{
+  font-weight: 800;
+  height: 100%;
+  font-size: 20px;
+  color: #343A40;
+  margin: 20px;
+  align-items: baseline;
 }
+
 .resultData{
-    width: 150px;
-    font-size: 20px;
-    margin-top: 40px;
-    margin-left: 35px;;
+  height: 85%;
+  font-size: 20px;
+}
+
+.copyBtn{  
+  background-color: #E5E5E5;
+  border: solid 1px #0a3871;
+  color: #0a3871;
+  border-radius: 15px;
+  width: 250px;
+  height: 50px;
+  font-size: 15px;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  bottom: 0; 
+}
+
+.copyBtn:hover{
+  background-color: #2c609f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
 }

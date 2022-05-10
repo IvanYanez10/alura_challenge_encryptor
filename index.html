@@ -12,34 +12,33 @@
       <img src="./images/logo-alura.png" alt="">
     </div>
     <div class="form-data">
-        <form id="data">
-          <textarea name="toEncryptData" class="toEncryptData" id="toEncryptData" maxlength="500" placeholder="Ingresa el texto aqui"></textarea>
-          <div class="formBnt">
-            <div class="just">
-              <img src="./images/excl-icon.png" style="height: 16px;"><span> Sólo letras minúsculas y sin acentos.</span>
-            </div>
-            <button id="encryptBtn" class="encryptBtn">Encriptar</button>
-            <button id="decryptBtn" class="decryptBtn">Desencriptar</button>                    
+        <textarea name="toEncryptData" spellcheck="false" class="toEncryptData" id="toEncryptData" maxlength="500" placeholder="Ingresa el texto aqui"></textarea>
+        <div class="formBnt">
+          <div class="just">
+            <img src="./images/excl-icon.png" style="height: 16px;"><span> Sólo letras minúsculas y sin acentos.</span>
           </div>
-      </form>    
-    </div>
-    <div class="form-reslts">
-        
-        <div class="no-data-result">
-          <img src="./images/illustration.png">
-        
-          <p class="not-found">Ningún mensaje fue encontrado</p>
-      
-          <p class="enter-data">Ingresa el texto que desees encriptar o desencriptar.</p>
+          <button id="encryptBtn" class="encryptBtn">Encriptar</button>
+          <button id="decryptBtn" class="decryptBtn">Desencriptar</button>                    
         </div>
-        
-        <div id="resultsScreen">
-          <span class="resultData"></span>
-          <form>
-              <button id="copyBtn" class="hidden resultText">Copiar</button>
-          </form>
-        </div>  
+    </div>
+    <div class="form-reslts">        
+       
+      <div id="no-data-result" class="no-data-result">
+        <img src="./images/illustration.png">
+      
+        <p class="not-found">Ningún mensaje fue encontrado</p>
+    
+        <p class="enter-data">Ingresa el texto que desees encriptar o desencriptar.
+          <br>Cesar cipher shift <span id="shifter-num" class=""></span></p>
+      </div>
+      <div id="resultsScreen" class="hidden">
+        <div class="resultData">
+          <span id="resultData"></span>
+        </div>
+        <button id="copyBtn" class="copyBtn">Copiar</button>
+      </div>     
     </div>
   </div>
+  <script src="./js/data.js"></script>
 </body>
 </html>
